@@ -56,10 +56,10 @@
           </div>
         </div>
       </div>
-      <div class="row" style="padding: 2em;">
+      <div class="row" style="margin-top: 2em;">
+        <!--fetch and loop the data to the cards below -->
         <?php $res = fetch_posts(); ?>
         <?php foreach ($res as $row) : ?>
-
           <div id="cardCol" class="col-xl-4 col-lg-4 col-md-6 col-sm-12" style="margin-bottom: 2em;">
             <div class="blog-wrapper home-blog-wrapper white-bg">
               <div class="blog-thumb">

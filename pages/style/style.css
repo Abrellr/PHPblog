@@ -25,17 +25,32 @@ a:hover,
   background-color: #2b96cc;
 }
 
-.section-title {
+.section-title h2 {
+  position: relative;
   margin-bottom: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1;
+}
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 60px;
+  height: 2px;
+  background: #ff5e14;
+  bottom: -25px;
+  margin-left: -30px;
 }
 
 .blog-area {
   min-height: 100vh;
 }
-
+.blog-wrapper {
+  background: #fff;
+  overflow: hidden;
+  padding: 20px;
+}
 .home-blog-wrapper {
   transition: 0.3s;
 }
