@@ -1,52 +1,46 @@
 body {
-    padding: 1em;
+  padding: 1em;
+}
+
+#blogTitle {
+  color: orange;
 }
 
 /* blog post cards css credit to https://codepen.io/baahubali92/pen/yGEXww */
+
 ul {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
-a:focus, a:hover, .portfolio-cat a:hover, .footer -menu li a:hover {
-    color: #2B96CC;
-    text-decoration: none;
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+  color: #2b96cc;
+  text-decoration: none;
 }
 
+#navTop {
+  height: 400px;
+  background-color: #2b96cc;
+}
 
-.section-title h2 {
-  position: relative;
+.section-title {
   margin-bottom: 45px;
-  display: inline-block;
-  font-weight: 600;
-  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.section-title h2::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    width: 60px;
-    height: 2px;
-    background: #ff5e14;
-    bottom: -25px;
-    margin-left: -30px;
-}
-.section-title.service-title p {
-  padding: 0 190px;
-  margin-bottom: 10px;
-}
+
 .blog-area {
-    min-height: 100vh;
+  min-height: 100vh;
 }
-.blog-wrapper {
-  background: #fff;
-  overflow: hidden;
-  padding: 20px;
-}
-.home-blog-wrapper{
-  transition: .3s;
+
+.home-blog-wrapper {
+  transition: 0.3s;
 }
 .blog-wrapper.home-blog-wrapper:hover {
-  box-shadow: 10px 20px 30px rgba(0,0,0,.12);
+  box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.12);
 }
 .blog-thumb {
   margin-bottom: 20px;
@@ -60,8 +54,6 @@ a:focus, a:hover, .portfolio-cat a:hover, .footer -menu li a:hover {
   padding: 0;
   text-align: left;
 }
-
-
 
 .blog-content.home-blog h2 {
   font-size: 18px;
@@ -98,9 +90,15 @@ a:focus, a:hover, .portfolio-cat a:hover, .footer -menu li a:hover {
 .embed-responsive {
   margin-bottom: 20px;
 }
-.meta-info ul li:first-child{padding-left:0}
-.meta-info ul li a{color:#ff5e14}
-.meta-info ul li a:hover{color:#444}
+.meta-info ul li:first-child {
+  padding-left: 0;
+}
+.meta-info ul li a {
+  color: #ff5e14;
+}
+.meta-info ul li a:hover {
+  color: #444;
+}
 .meta-info ul li::before {
   border: 1px solid #999;
   border-radius: 5px;
@@ -111,10 +109,16 @@ a:focus, a:hover, .portfolio-cat a:hover, .footer -menu li a:hover {
   top: 6px;
   width: 5px;
 }
-.meta-info ul li:first-child:before{display:none}
+.meta-info ul li:first-child:before {
+  display: none;
+}
 .blog-thumb img {
   width: 100%;
 }
 .link-box a {
   font-weight: 600;
+}
+
+.card {
+  display: flex;
 }
